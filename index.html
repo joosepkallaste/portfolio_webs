@@ -1,0 +1,507 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Joosep-Gre Kallaste - Portfolio</title>
+    <meta
+      name="description"
+      content="Project portfolio of Joosep-Gre Kallaste - work, skills, and contact."
+    />
+
+    <!-- Open Graph (nice previews when sharing links) -->
+    <meta property="og:title" content="Joosep-Gre Kallaste - Portfolio" />
+    <meta
+      property="og:description"
+      content="Work, skills, and contact."
+    />
+    <meta property="og:type" content="website" />
+
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <!-- Skip link for accessibility -->
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#">
+          <span class="brand-mark" aria-hidden="true">◆</span>
+          <span class="brand-text">Joosep-Gre Kallaste</span>
+        </a>
+
+        <nav class="nav" aria-label="Primary navigation">
+          <button
+            class="nav-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="nav-menu"
+          >
+            <span class="sr-only">Toggle navigation</span>
+            <span class="nav-toggle-bars" aria-hidden="true"></span>
+          </button>
+
+          <ul id="nav-menu" class="nav-menu">
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <button id="themeBtn" class="btn btn-ghost" type="button">
+            <span class="theme-icon" aria-hidden="true">🌙</span>
+            <span class="btn-text">Theme</span>
+          </button>
+          <a class="btn btn-primary" href="#contact">Hire / Collaborate</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- HERO -->
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="kicker">Software • Data • Projects</p>
+            <h1>
+              I build practical, clean solutions -
+              <span class="accent">from idea to shipped.</span>
+            </h1>
+            <p class="lead">
+              I am looking to widen my skill portfolio, so any kind of project is welcome.
+            </p>
+
+            <div class="hero-cta">
+              <a class="btn btn-primary" href="#projects">View Projects</a>
+              <a class="btn btn-ghost" href="#contact">Contact</a>
+              <a
+                class="btn btn-ghost"
+                href="https://github.com/joosepkallaste"
+                target="_blank"
+                rel="noreferrer"
+              >
+                GitHub
+              </a>
+            </div>
+
+            <div class="hero-stats" aria-label="Highlights">
+              <div class="stat">
+                <div class="stat-number">2+</div>
+                <div class="stat-label">Projects</div>
+              </div>
+              <div class="stat">
+                <div class="stat-number">2+</div>
+                <div class="stat-label">Languages</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-card" aria-label="Profile card">
+            <div class="profile">
+              <div class="avatar" aria-hidden="true">YN</div>
+              <div>
+                <h2 class="profile-name">Joosep-Gre Kallaste</h2>
+                <p class="profile-role">
+                  e.g. Software Engineer • QA • Data Analyst
+                </p>
+              </div>
+            </div>
+
+            <ul class="profile-meta">
+              <li><span>📍</span> Tallinn or Tartu, Estonia</li>
+              <li><span>💼</span> Open to internships / roles</li>
+              <li><span>⚡</span> Java • Python • SQL</li>
+            </ul>
+
+            <div class="profile-links">
+              <a
+                class="chip"
+                href="https://www.linkedin.com/in/joosep-gre-kallaste-935b8634a/"
+                target="_blank"
+                rel="noreferrer"
+                >LinkedIn</a
+              >
+              <a
+                class="chip"
+                href="https://github.com/joosepkallaste"
+                target="_blank"
+                rel="noreferrer"
+                >GitHub</a
+              >
+              <a class="chip" href="#contact">Email</a>
+            </div>
+
+            <div class="profile-note">
+              <p>
+                Tip: Replace this card with a real photo later if you want. This
+                layout works great with an image too.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section id="projects" class="section">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <h2>Projects</h2>
+              <p class="muted">
+                Selected work. Add short, specific outcomes and the tech used.
+              </p>
+            </div>
+
+            <div class="filters" role="group" aria-label="Project filters">
+              <button class="filter-btn is-active" data-filter="all">
+                All
+              </button>
+              <button class="filter-btn" data-filter="web">Web</button>
+              <button class="filter-btn" data-filter="backend">Backend</button>
+              <button class="filter-btn" data-filter="data">Data</button>
+            </div>
+          </div>
+
+          <div class="grid projects-grid" id="projectsGrid">
+            <!-- Project Card 1 -->
+            <article class="card project" data-tags="web">
+              <div class="card-top">
+                <div class="badge">Website</div>
+                <div class="card-actions">
+                  <a
+                    class="icon-btn"
+                    href="https://github.com/your-username/project-1"
+                    target="_blank"
+                    rel="noreferrer"
+                    aria-label="Project 1 GitHub"
+                    title="GitHub"
+                    >↗</a
+                  >
+                </div>
+              </div>
+              <h3>Bridge website</h3>
+              <p class="muted">
+                A website explaining the rules, history and backround of Bridge, the card game.
+              </p>
+
+              <ul class="tech">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JS</li>
+              </ul>
+
+              <div class="card-footer">
+                <a class="btn btn-ghost btn-sm" href="#" target="_blank" rel="noreferrer"
+                  >Live Demo</a
+                >
+                <button class="btn btn-ghost btn-sm" type="button" data-modal="project1">
+                  Details
+                </button>
+              </div>
+            </article>
+
+            <!-- Project Card 2 -->
+            <article class="card project" data-tags="backend">
+              <div class="card-top">
+                <div class="badge">Backend</div>
+                <div class="card-actions">
+                  <a
+                    class="icon-btn"
+                    href="https://github.com/your-username/project-2"
+                    target="_blank"
+                    rel="noreferrer"
+                    aria-label="Project 2 GitHub"
+                    title="GitHub"
+                    >↗</a
+                  >
+                </div>
+              </div>
+              <h3>Cover letter automation</h3>
+              <p class="muted">
+                Simple Python logic with a GUI and a SQLite libraary for storing
+              </p>
+
+              <ul class="tech">
+                <li>Python </li>
+                <li>SQLite</li>
+              </ul>
+
+              <div class="card-footer">
+                <a class="btn btn-ghost btn-sm" href="#" target="_blank" rel="noreferrer"
+                  >Docs</a
+                >
+                <button class="btn btn-ghost btn-sm" type="button" data-modal="project2">
+                  Details
+                </button>
+              </div>
+            </article>
+
+            <!-- Project Card 3 -->
+            <article class="card project" data-tags="data">
+              <div class="card-top">
+                <div class="badge">Data</div>
+                <div class="card-actions">
+                  <a
+                    class="icon-btn"
+                    href="https://github.com/your-username/project-3"
+                    target="_blank"
+                    rel="noreferrer"
+                    aria-label="Project 3 GitHub"
+                    title="GitHub"
+                    >↗</a
+                  >
+                </div>
+              </div>
+              <h3>Movie selector</h3>
+              <p class="muted">
+                Using Python and SQLite to store, randomly select and unstore movie titles.
+              </p>
+
+              <ul class="tech">
+                <li>Python</li>
+                <li>SQLite</li>
+              </ul>
+
+              <div class="card-footer">
+                <a class="btn btn-ghost btn-sm" href="#" target="_blank" rel="noreferrer"
+                  >Report</a
+                >
+                <button class="btn btn-ghost btn-sm" type="button" data-modal="project3">
+                  Details
+                </button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section id="skills" class="section section-alt">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <h2>Skills</h2>
+              <p class="muted">
+                Keep it focused. Add what you’d want to be hired for.
+              </p>
+            </div>
+          </div>
+
+          <div class="grid skills-grid">
+            <div class="card">
+              <h3>Languages I have experience in </h3>
+              <ul class="list">
+                <li>Java</li>
+                <li>Python</li>
+                <li>Golang</li>
+                <li>HTML, CSS</li>
+                <li>SQL</li>
+                <li>JavaScript</li>
+              </ul>
+            </div>
+
+            <div class="card">
+              <h3>Tools</h3>
+              <ul class="list">
+                <li>Git / GitHub</li>
+                <li>Docker</li>
+                <li>PostgreSQL</li>
+                <li>Linux, Windows PS</li>
+              </ul>
+            </div>
+
+            <div class="card">
+              <h3>Focus</h3>
+              <ul class="list">
+                <li>APIs & backend</li>
+                <li>Testing & clean code</li>
+                <li>Performance & reliability</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about" class="section">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <h2>About</h2>
+              <p class="muted">
+                As a I have low to none experience working in the IT 
+                sector, I'm hoping to expand on that
+              </p>
+            </div>
+          </div>
+
+          <div class="grid about-grid">
+            <div class="card">
+              <h3>Bio</h3>
+              <p>
+                I am a first year computer science student, building and learning different kinds of projects and in the mits of finding my passion.
+                I love clean and readable code, collaborating with new people and testing code. 
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="section section-alt">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <h2>Contact</h2>
+              <p class="muted">
+                This form opens the user’s email app (no backend required).
+              </p>
+            </div>
+          </div>
+
+          <div class="grid contact-grid">
+            <div class="card">
+              <h3>Message me</h3>
+
+              <form id="contactForm" class="form">
+                <label>
+                  <span>Name</span>
+                  <input name="name" type="text" placeholder="Your name" required />
+                </label>
+
+                <label>
+                  <span>Email</span>
+                  <input
+                    name="email"
+                    type="email"
+                    placeholder="you@example.com"
+                    required
+                  />
+                </label>
+
+                <label>
+                  <span>Message</span>
+                  <textarea
+                    name="message"
+                    rows="5"
+                    placeholder="What would you like to build?"
+                    required
+                  ></textarea>
+                </label>
+
+                <button class="btn btn-primary" type="submit">
+                  Send Email
+                </button>
+
+                <p class="muted tiny">
+                  Replace <code>youremail@example.com</code> in <code>script.js</code>.
+                </p>
+              </form>
+            </div>
+
+            <div class="card">
+              <h3>Links</h3>
+              <div class="links">
+                <a
+                  class="link-row"
+                  href="https://github.com/your-username"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <span>GitHub</span><span class="muted"></span>
+                </a>
+                <a
+                  class="link-row"
+                  href="https://www.linkedin.com/in/joosep-gre-kallaste-935b8634a/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <span>LinkedIn</span><span class="muted">joosep-gre-kallaste</span>
+                </a>
+                <a class="link-row" href="mailto:joosep.kallaste@gmail.com">
+                  <span>Gmail</span><span class="muted">joosep.kallaste@gmail.com</span>
+                </a>
+              </div>
+
+              <hr class="divider" />
+
+              <h3>Resume</h3>
+              <p class="muted">
+              </p>
+              <a class="btn btn-ghost" href="./assets/Joosep-Gre Kallaste_cv.pdf" target="_blank" rel="noreferrer">
+                Download Resume
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p class="muted">
+          © <span id="year"></span> Joosep-Gre Kallaste. Built with HTML/CSS/JS.
+        </p>
+        <a class="muted" href="#top" id="backToTop">Back to top ↑</a>
+      </div>
+    </footer>
+
+    <!-- Modals (simple project details) -->
+    <dialog class="modal" id="project1">
+      <div class="modal-inner">
+        <div class="modal-head">
+          <h3>Project One — Details</h3>
+          <button class="icon-btn" data-close-modal aria-label="Close">✕</button>
+        </div>
+        <p class="muted">
+          Add screenshots, architecture notes, what you learned, and next steps.
+        </p>
+        <ul class="list">
+          <li><strong>Problem:</strong> ...</li>
+          <li><strong>Solution:</strong> ...</li>
+          <li><strong>Result:</strong> ...</li>
+        </ul>
+      </div>
+    </dialog>
+
+    <dialog class="modal" id="project2">
+      <div class="modal-inner">
+        <div class="modal-head">
+          <h3>API / Service — Details</h3>
+          <button class="icon-btn" data-close-modal aria-label="Close">✕</button>
+        </div>
+        <p class="muted">
+          Add endpoints, auth, deployment, and metrics (latency, uptime, etc.).
+        </p>
+        <ul class="list">
+          <li><strong>Stack:</strong> Java, Spring, PostgreSQL</li>
+          <li><strong>What you did:</strong> ...</li>
+          <li><strong>Next:</strong> ...</li>
+        </ul>
+      </div>
+    </dialog>
+
+    <dialog class="modal" id="project3">
+      <div class="modal-inner">
+        <div class="modal-head">
+          <h3>Analytics / Model — Details</h3>
+          <button class="icon-btn" data-close-modal aria-label="Close">✕</button>
+        </div>
+        <p class="muted">
+          Add dataset source, pipeline, visuals, and key insights.
+        </p>
+        <ul class="list">
+          <li><strong>Data:</strong> ...</li>
+          <li><strong>Method:</strong> ...</li>
+          <li><strong>Insights:</strong> ...</li>
+        </ul>
+      </div>
+    </dialog>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
